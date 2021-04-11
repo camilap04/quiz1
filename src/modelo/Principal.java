@@ -43,6 +43,7 @@ private ArrayList<Figura> figs;
 	public void pintar() {
 		for (int i = 0; i < figs.size(); i++) {
 			figs.get(i).pintar();
+			figs.get(i).movimiento();
 		}
 	}
 	
