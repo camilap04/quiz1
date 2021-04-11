@@ -11,7 +11,7 @@ public class Principal extends PApplet{
 	public Principal(PApplet app) {
 
 		this.app = app;
-		texto= app.loadStrings("../TXT/texto");
+		texto= app.loadStrings("../data/datos.txt");
 		leerTEXTO();
 	}
 
