@@ -2,7 +2,7 @@ package modelo;
 
 import processing.core.PApplet;
 
-public class Figura extends PApplet{
+public abstract class Figura extends PApplet{
 
 	protected int posX, posY, dir, val, tam;
 		protected PApplet app;
@@ -27,6 +27,8 @@ public class Figura extends PApplet{
 				posX += 0;
 			}
 		}
+		
+		public abstract void pintar ();
 		
 		
 		

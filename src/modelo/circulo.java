@@ -8,7 +8,7 @@ public class circulo extends Figura{
 		super(posX, posY, dir, val, tam, app);
 	}
 	
-	public void pintarCirculo () {
+	public void pintar () {
 		
 	app.fill ((int)Math.random()*255+1,(int)Math.random()*255+1, (int)Math.random()*255+1 );
 	app.ellipse(posX, posY, tam, tam);

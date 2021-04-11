@@ -15,6 +15,10 @@ public class control {
 		logica= new Principal(app);
 	} 
 	
+	public void pintar() {
+		logica.pintar();
+	}
+	
 	
 
 

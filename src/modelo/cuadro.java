@@ -8,11 +8,12 @@ public class cuadro extends Figura{
 		super(posX, posY, dir, val, tam, app);
 	}
 	
-	public void pintarCuadro () {
+	public void pintar () {
 		
-	app.fill ((int)Math.random()*255+1,(int)Math.random()*255+1, (int)Math.random()*255+1 );
+	app.fill (255);
 	app.rect(posX, posY, tam, tam);
-	app.text(val, posX/2, posY/2);
+	app.fill(255,0,0);
+	app.text(val, posX+10, posY + 20);
 	
 	}
 

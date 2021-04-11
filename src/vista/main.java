@@ -19,6 +19,7 @@ public control control;
 	}
 	
 	public void draw () {
-		
+		background(0);
+		control.pintar();
 	}
 }
