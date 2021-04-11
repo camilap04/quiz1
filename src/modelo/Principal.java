@@ -25,11 +25,6 @@ public class Principal extends PApplet{
 		}	
 	}
 
-
-
-
-
-
 }
 
 
