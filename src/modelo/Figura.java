@@ -21,11 +21,23 @@ public abstract class Figura extends PApplet{
 		}
 		
 		public void movimiento () {
-			if (!noMovimiento) {
-			posX += dir;
+			validateInBorders();
+			if (!noMovimiento ) {
+			posX += dir *5;
 			} else {
+			
 				posX += 0;
 			}
+		}
+			
+				protected void validateInBorders() {
+					if(posX <= 0|| posX >= (800 - 0/2)) {
+						this.dir *= -1;
+					}
+					if(posY <= 0 ||posY >= (600 - 0/2)) {
+						this.dir *= -1;
+					}		
+				
 		}
 		
 		public abstract void pintar ();
