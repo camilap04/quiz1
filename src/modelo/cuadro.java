@@ -9,11 +9,14 @@ public class cuadro extends Figura{
 	}
 	
 	public void pintar () {
-		
+	
+	app.rectMode(PApplet. CENTER);
+	app.textAlign( CENTER);
 	app.fill (255);
 	app.rect(posX, posY, tam, tam);
 	app.fill(255,0,0);
-	app.text(val, posX+10, posY + 20);
+	app.textSize(15);
+	app.text(val, posX, posY );
 	
 	}
 
