@@ -35,6 +35,21 @@ private ArrayList<Figura> figs;
 					cuadro c = new cuadro(posX,posY,dir,val,tam,this.app);
 					figs.add(c);
 				}
+					
+					else if (figuras[j].equals("Circulo")) {
+						int posX= Integer.parseInt(figuras[j+2]);
+						int posY= Integer.parseInt(figuras[j+3]);
+						int dir= Integer.parseInt(figuras[j+4]);
+						int val= Integer.parseInt(figuras[j+5]);
+						int tam= Integer.parseInt(figuras[j+1]);
+						circulo c = new circulo(posX,posY,dir,val,tam,this.app);
+						figs.add(c);	
+						
+					
+				
+					
+					
+				}
 			}
 			
 
